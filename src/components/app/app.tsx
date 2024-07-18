@@ -8,22 +8,22 @@ import PrivateRoute from '../private-route/private-route';
 import { DATA } from '../mock-data/const.ts';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import { AppRoute } from '../../const.ts';
 function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MainPage offersData={DATA} />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path={AppRoute.Root} element={<MainPage offersData={DATA} />} />
+        <Route path={AppRoute.Login} element={<LoginPage />} />
         <Route
-          path="/favorites"
+          path={AppRoute.Favorites}
           element={
             <PrivateRoute>
               <FavoritesPage />
             </PrivateRoute>
           }
         />
-        <Route path="/offer/:id" element={<OfferPage />} />
+        <Route path={AppRoute.Offer} element={<OfferPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
