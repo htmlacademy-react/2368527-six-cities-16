@@ -1,4 +1,4 @@
-import ItemCard, { CardProps } from '../components/item-card/item-card';
+import ItemCard, { CardProps } from '../../components/item-card/item-card';
 
 type MainPageProps = {
   offersData: CardProps[];
