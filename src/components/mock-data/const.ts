@@ -1,5 +1,6 @@
 export const DATA = [
   {
+    maxAdults: 1,
     id: '6af6f711-c28d-4121-82cd-e0b462a27f00',
     title: 'Beautiful & luxurious studio at great location',
     type: 'apartment',
@@ -23,6 +24,7 @@ export const DATA = [
     previewImage: 'https://url-to-image/image.png',
   },
   {
+    maxAdults: 1,
     id: '66f711-c28d-4121-82cd-e0b462a27f00',
     title: 'Wood and stone place',
     type: 'room',
@@ -46,6 +48,7 @@ export const DATA = [
     previewImage: 'https://url-to-image/image.png',
   },
   {
+    maxAdults: 1,
     id: '6af6f711-c28d-4121-82cd-e0b464Su70',
     title: 'Canal View Prinsengracht',
     type: 'apartment',
@@ -69,6 +72,7 @@ export const DATA = [
     previewImage: 'https://url-to-image/image.png',
   },
   {
+    maxAdults: 1,
     id: '6af69711-c28d-4971-82cd-e0b462a27f00',
     title: 'Nice, cozy, warm big ded apartment',
     type: 'room',
@@ -92,6 +96,7 @@ export const DATA = [
     previewImage: 'https://url-to-image/image.png',
   },
   {
+    maxAdults: 1,
     id: '6nf6f711-c28d-4121-82dd-e0b462w27f28',
     title: 'Beautiful',
     type: 'apartment',

@@ -8,7 +8,7 @@ import PrivateRoute from '../private-route/private-route';
 import { DATA } from '../mock-data/const.ts';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AppRoute } from '../../const.ts';
+import { AppRoute, AuthorizationStatus } from '../../const';
 function App(): JSX.Element {
   return (
     <BrowserRouter>
@@ -18,7 +18,7 @@ function App(): JSX.Element {
         <Route
           path={AppRoute.Favorites}
           element={
-            <PrivateRoute>
+            <PrivateRoute authorizationStatus={AuthorizationStatus.NoAuth}>
               <FavoritesPage />
             </PrivateRoute>
           }
